@@ -1,9 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css"> </head>
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Your name, profession, or tagline goes here.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Write a short bio about yourself here. Talk about your skills, interests, and experience.</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-card" id="project1">
+            <img src="images/project1.jpg" alt="Project 1">
+            <h3>Smart Sensor System for Autism Meltdown Detection: Wearable Data Analysis and AI-Driven Classification</h3>
+            <p>Description of your project. Include any relevant links or technologies used.</p>
+        </div>
+        <div class="project-card" id="project2">
+            <img src="images/project2.jpg" alt="Project 2">
+            <h3>Project Title</h3>
+            <p>Description of your project. Include any relevant links or technologies used.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you want to get in touch, feel free to reach out via email or social media.</p>
+        <ul>
+            <li>Email: your.email@example.com</li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">Your LinkedIn</a></li>
+            <li>GitHub: <a href="https://github.com/yourusername">Your GitHub</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+
+    <div id="modal">
+        <div class="modal-content">
+            <span id="close-btn">&times;</span>
+            <h2>Project Details</h2>
+            <p>Detailed description of the project.</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
