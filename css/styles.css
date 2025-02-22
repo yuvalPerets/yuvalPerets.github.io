@@ -56,8 +56,8 @@ section {
 }
 
 .hero-image img {
-    width: 155px !important;
-    height: 155px !important;
+    width: 155px ;
+    height: 155px ;
     border-radius: 50%;
     object-fit: cover;
 }
