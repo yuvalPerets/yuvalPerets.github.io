@@ -61,6 +61,21 @@ section {
     border-radius: 50%;
     object-fit: cover;
 }
+.hero {
+    justify-content: flex-start;
+    text-align: left;
+    padding-left: 20px; /* Adjust as needed */
+}
+
+.hero-text {
+    text-align: left;
+    margin-right: 0;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: flex-start;
+}
 
 /* Project section layout */
 .project-container {
