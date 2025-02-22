@@ -40,10 +40,26 @@ section {
 
 /* Hero section */
 .hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #2c3e50;
     color: white;
     padding: 60px 20px;
-    text-align: center;
+    text-align: left;
+}
+
+.hero-text {
+    flex: 1;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.hero-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 /* Project section layout */
@@ -68,11 +84,11 @@ section {
 }
 
 .project-card img {
-    width: 100%; /* Ensures the image fits within the card */
-    max-width: 350px; /* Sets a fixed maximum width */
-    height: 250px; /* Sets a fixed height */
+    width: 100%;
+    max-width: 350px;
+    height: 250px;
     border-radius: 8px;
-    object-fit: cover; /* Ensures aspect ratio and proper cropping */
+    object-fit: cover;
 }
 
 .project-card h3 {
@@ -92,15 +108,27 @@ section {
         align-items: center;
     }
     .project-card img {
-        max-width: 100%; /* Makes image responsive */
-        height: 200px; /* Adjusts height for readability */
+        max-width: 100%;
+        height: 200px;
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-text {
+        text-align: center;
+        margin-right: 0;
+    }
+    .hero-image img {
+        width: 120px;
+        height: 120px;
     }
 }
 
 @media (max-width: 480px) {
     .project-card img {
         max-width: 100%;
-        height: 180px; /* Further reduction for smaller screens */
+        height: 180px;
     }
 }
 
@@ -160,25 +188,4 @@ html {
     right: 10px;
     font-size: 30px;
     cursor: pointer;
-}
-
-#home .hero {
-    display: flex; /* Use flexbox for layout */
-    justify-content: flex-end; /* Align content to the right */
-    align-items: center; /* Vertically align items */
-    padding: 60px 20px;
-    background-color: #2c3e50;
-    color: white;
-}
-
-.hero-text {
-    text-align: right; /* Align text to the right */
-    margin-right: 20px; /* Add some spacing between text and image */
-}
-
-.hero-image img {
-    width: 200px; /* Adjust image size as needed */
-    height: auto;
-    border-radius: 50%; /* Make the image circular (optional) */
-    object-fit: cover; /*ensure image fills the circle*/
 }
