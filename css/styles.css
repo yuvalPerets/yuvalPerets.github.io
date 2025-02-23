@@ -37,12 +37,12 @@ header {
     padding: 0 20px;
 }
 
-/* Hide hamburger button by default */
+/* Hamburger Button (Hidden on Large Screens) */
 .hamburger {
     display: none;
+    font-size: 28px;
     background: none;
     border: none;
-    font-size: 28px;
     color: white;
     cursor: pointer;
 }
