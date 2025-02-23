@@ -8,20 +8,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Modal for project details
-const modal = document.getElementById("modal");
-const closeBtn = document.getElementById("close-btn");
-
-document.querySelectorAll('.project-card').forEach(card => {
-    card.addEventListener('click', () => {
-        modal.style.display = "block";
-    });
-});
-
-closeBtn.addEventListener('click', () => {
-    modal.style.display = "none";
-});
-
-document.getElementById("hamburger").addEventListener("click", function() {
+// Toggle mobile menu
+document.getElementById("hamburger").addEventListener("click", function () {
     document.getElementById("nav-menu").classList.toggle("active");
 });
