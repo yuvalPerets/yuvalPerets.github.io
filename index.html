@@ -7,72 +7,105 @@
     <title>Yuval Perets | Portfolio</title>
     
     <link rel="stylesheet" href="css/styles.css"> </head>
-<body>
 
-    <header>
-        <nav>
+    <body>
+
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <section id="home">
+            <div class="hero">
+                <div class="hero-text">
+                    <h1>Yuval Perets</h1>
+                    <p>Computer Engineer</p>
+                </div>
+                <div class="hero-image">
+                    <img src="images/yuvalPic.jpeg" alt="Yuval Perets Profile">
+                </div>
+            </div>
+        </section>
+    
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello, my name is Yuval Perets, and I am a passionate and driven Computer Engineer. I thrive on creativity and solving complex problems, which allow me to stay sharp and adaptive in the ever-evolving tech landscape.</p>
+            
+            <p>With a solid foundation in engineering, I have honed my ability to tackle challenges head-on and deliver results. I am looking for an opportunity to apply my skills and knowledge in a high-tech company where I can contribute and grow further.</p>
+        </section>
+    
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-container">
+                <div class="project-card">
+                    <img src="images/project1.jpg" alt="Project 1">
+                    <h3>Project Title 1</h3>
+                    <p>Project Description here. A brief overview of what the project is about.</p>
+                </div>
+                <div class="project-card">
+                    <img src="images/project2.jpg" alt="Project 2">
+                    <h3>Project Title 2</h3>
+                    <p>Project Description here. A brief overview of what the project is about.</p>
+                </div>
+            </div>
+        </section>
+    
+        <!-- New Section for Skills and Tools -->
+        <section id="skills-tools">
+            <h2>Skills & Tools</h2>
+            <div class="skills-tools-container">
+                <!-- Skills Section -->
+                <div>
+                    <h3>Skills & Programming Languages</h3>
+                    <ul>
+                        <li>Kotlin</li>
+                        <li>JavaScript</li>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>C#</li>
+                        <li>Java</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <!-- Tools Section -->
+                <div>
+                    <h3>Tools & Technologies</h3>
+                    <ul>
+                        <li>VS Code</li>
+                        <li>Android Studio</li>
+                        <li>Eclipse</li>
+                        <li>Postman</li>
+                        <li>Ubuntu (Linux)</li>
+                        <li>MATLAB</li>
+                        <li>RabbitMQ</li>
+                        <li>Wireshark</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>If you want to get in touch, feel free to reach out via email or social media.</p>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li>Email: yuval9330@gmail.com</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/yuval-perets-00a301288/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                <li>GitHub: <a href="https://github.com/yuvalPerets" target="_blank" rel="noopener noreferrer">GitHub</a></li>
             </ul>
-        </nav>
-    </header>
-
-    <section id="home">
-        <div class="hero">
-            <div class="hero-text">
-                <h1>Yuval Perets</h1>
-                <p>Computer Engineer</p>
-            </div>
-            <div class="hero-image">
-                <img src="images/yuvalPic.jpeg" alt="Yuval Perets Profile">
-            </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Write a short bio about yourself here. Talk about your skills, interests, and experience.</p>
-    </section>
-
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project-card" id="project1">
-            <img src="images/sensorProject.jpg" alt="Project 1">
-            <h3>Smart Sensor System for Autism Meltdown Detection: Wearable Data Analysis and AI-Driven Classification</h3>
-            <p>Description of your project. Include any relevant links or technologies used.</p>
-        </div>
-        <div class="project-card" id="project2">
-            <img src="images/project2.jpg" alt="Project 2">
-            <h3>Project Title</h3>
-            <p>Description of your project. Include any relevant links or technologies used.</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>If you want to get in touch, feel free to reach out via email or social media.</p>
-        <ul>
-            <li>Email: yuval9330@gmail.com</li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/yuval-perets-00a301288/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-            <li>GitHub: <a href="https://github.com/yuvalPerets" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
-    </footer>
-
-    <div id="modal">
-        <div class="modal-content">
-            <span id="close-btn">&times;</span>
-            <h2>Project Details</h2>
-            <p>Detailed description of the project.</p>
-        </div>
-    </div>
-
-    <script src="js/script.js"></script>
-</body>
-</html>
+        </section>
+    
+        <footer>
+            <p>&copy; 2025 Yuval Perets. All rights reserved.</p>
+        </footer>
+    
+    </body>
+    </html>

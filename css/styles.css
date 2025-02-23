@@ -116,13 +116,77 @@ section {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
+/* Skills and Tools Layout */
+.skills-tools-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.skills-tools-container > div {
+    flex: 1;
+}
+
 /* Contact section */
+#contact {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for contact section */
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+#contact h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center; /* Center-align the title */
+}
+
+#contact p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #555;
+    text-align: center; /* Center-align the description */
+}
+
 #contact ul {
-    list-style-type: none;
+    list-style: none;
+    padding-left: 0;
 }
 
 #contact ul li {
-    margin: 10px 0;
+    margin: 15px 0;
+    font-size: 1rem; /* Decreased font size */
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+#contact ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+
+#contact ul li a:hover {
+    color: #007BFF; /* Color on hover */
+}
+
+#contact ul li::before {
+    content: '•'; /* Adding a bullet point before each item */
+    color: #007BFF; /* Change bullet color */
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+#contact ul li {
+    padding-left: 30px;
+    border-left: 2px solid #007BFF;
+    margin-left: 20px;
 }
 
 /* Footer */
@@ -195,6 +259,11 @@ html {
     .hero-image img {
         width: 120px;
         height: 120px;
+    }
+
+    .skills-tools-container {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
