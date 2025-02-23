@@ -21,3 +21,7 @@ document.querySelectorAll('.project-card').forEach(card => {
 closeBtn.addEventListener('click', () => {
     modal.style.display = "none";
 });
+
+document.getElementById("hamburger").addEventListener("click", function() {
+    document.getElementById("nav-menu").classList.toggle("active");
+});
