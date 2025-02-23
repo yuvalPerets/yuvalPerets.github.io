@@ -23,7 +23,7 @@ header {
     color: white;
     padding: 15px 0;
     text-align: center;
-    z-index: 1000; /* Ensures it stays above other content */
+    z-index: 1000;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -56,7 +56,7 @@ section {
 .hero {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align content to the left */
+    justify-content: flex-start;
     background-color: #2c3e50;
     color: white;
     padding: 60px 20px;
@@ -121,16 +121,21 @@ section {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    max-width: 1000px; /* Prevents stretching too much on larger screens */
+    margin: 0 auto; /* Centers the section */
 }
 
+/* Ensures each column takes up equal space */
 .skills-tools-container > div {
     flex: 1;
+    min-width: 250px; /* Prevents items from collapsing on small screens */
 }
 
 /* Contact section */
 #contact {
     padding: 20px;
-    background-color: #f9f9f9; /* Light background for contact section */
+    background-color: #f9f9f9;
     border-radius: 8px;
     margin-top: 30px;
 }
@@ -141,14 +146,14 @@ section {
     color: #333;
     font-weight: bold;
     text-transform: uppercase;
-    text-align: center; /* Center-align the title */
+    text-align: center;
 }
 
 #contact p {
     margin-bottom: 20px;
     font-size: 1.1rem;
     color: #555;
-    text-align: center; /* Center-align the description */
+    text-align: center;
 }
 
 #contact ul {
@@ -158,7 +163,7 @@ section {
 
 #contact ul li {
     margin: 15px 0;
-    font-size: 1rem; /* Decreased font size */
+    font-size: 1rem;
     color: #555;
     display: flex;
     align-items: center;
@@ -173,12 +178,12 @@ section {
 }
 
 #contact ul li a:hover {
-    color: #007BFF; /* Color on hover */
+    color: #007BFF;
 }
 
 #contact ul li::before {
-    content: '•'; /* Adding a bullet point before each item */
-    color: #007BFF; /* Change bullet color */
+    content: '•';
+    color: #007BFF;
     font-size: 1.5rem;
     margin-right: 10px;
 }
@@ -260,7 +265,8 @@ html {
         width: 120px;
         height: 120px;
     }
-
+    
+    /* Stack skills & tools vertically */
     .skills-tools-container {
         flex-direction: column;
         align-items: center;
